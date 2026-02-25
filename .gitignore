@@ -151,6 +151,7 @@ activemq-data/
 .env
 .envrc
 .venv
+.well-known
 env/
 venv/
 config/settings.json # Ignore API settings file
