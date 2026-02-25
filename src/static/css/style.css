@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Styling for the logos container */
+.logos-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logos */
+}
+
+.logos-container img {
+    height: 40px; /* Adjust as needed for all logos */
+    width: auto;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu li {
+    margin-left: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.main-menu a:hover,
+.main-menu li.active a {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+}
+
+.separator {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.method-list .method-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.method-list .method-item:last-child {
+    border-bottom: none;
+}
+
+.method-list h2 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.method-list h2 a:hover {
+    text-decoration: underline;
+}
+
+.parameters-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.parameters-table th,
+.parameters-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.parameters-table th {
+    background-color: #f2f2f2;
+}
+
+.parameters-table input[type="text"],
+.parameters-table input[type="number"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+textarea {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f9f9f9;
+    resize: vertical;
+}

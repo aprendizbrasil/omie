@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ method_display_name }}{% endblock %}
+
+{% block content %}
+    <h1>Método: {{ method_display_name }}</h1>
+    <h3>Endpoint: /api/v1/geral/clientes/</h3> {# Placeholder for now #}
+
+    <form action="#" method="POST">
+        <h2>Parâmetros</h2>
+        <table class="parameters-table">
+            <thead>
+                <tr>
+                    <th>Nome do Parâmetro</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for param in method_parameters %}
+                <tr>
+                    <td>{{ param.name }}</td>
+                    <td>
+                        <input type="{{ param.type }}" 
+                               name="{{ param.name }}" 
+                               value="{{ request.form.get(param.name, param.default) }}" 
+                               placeholder="{{ param.default }}">
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <hr class="separator">
+
+    <h2>Resposta JSON</h2>
+    <textarea class="json-response" rows="10">{{ json_response_data }}</textarea>
+
+    <h2>Comando cURL</h2>
+    <textarea class="curl-command" rows="5">{{ curl_command_data }}</textarea>
+{% endblock %}

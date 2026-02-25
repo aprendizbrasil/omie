@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ module_info.name }}{% endblock %}
+
+{% block content %}
+    <h1>Módulo: {{ module_info.name }}</h1>
+
+    <div class="method-list">
+        {% for method_key, method_display_name in module_info.methods.items() %}
+        <div class="method-item">
+            <h2><a href="{{ url_for("method_page", module_name=current_module, method_name=method_key) }}">{{ method_display_name }}</a></h2>
+            <hr class="separator">
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

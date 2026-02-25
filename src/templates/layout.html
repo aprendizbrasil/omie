@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMIE API - {{ self.title() }}</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
+</head>
+<body>
+    <header>
+        <div class="logos-container">
+            <img src="{{ url_for("static", filename="img/dwith01.webp") }}" alt="Logo Dwith">
+            <img src="{{ url_for("static", filename="img/Zapio_01.png") }}" alt="Logo Zapio">
+            <img src="{{ url_for("static", filename="img/logo-omie.png") }}" alt="Logo Omie">
+        </div>
+        <nav class="main-menu">
+            <ul>
+                {% for module_key, module_info in modules.items() %}
+                <li {% if module_key == current_module %}class="active"{% endif %}>
+                    <a href="{{ url_for("module_page", module_name=module_key) }}">{{ module_info.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <hr class="separator">
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <script src="{{ url_for("static", filename="js/script.js") }}"></script>
+</body>
+</html>
