@@ -123,3 +123,15 @@ python src/web_app.py
 Abra seu navegador e acesse: `http://127.0.0.1:7100/`
 
 Você poderá navegar pela interface, testar os métodos da API e observar as respostas JSON e os comandos cURL gerados. 
+
+# Licença
+## English:
+Copyright © 2026 Aprendiz Brasil. All rights reserved.
+No part of this source code may be used, copied, or modified without prior written authorization from the author. For licensing inquiries and permission requests, please contact:
+Email: aprendizbrasil@hotmail.com
+
+## Português:
+Copyright © 2026 - Aprendiz Brasil. Todos os direitos reservados. 
+O uso, cópia ou modificação deste código requer autorização 
+prévia por escrito do autor.
+E-mail: aprendizbrasil@hotmail.com

@@ -79,7 +79,7 @@ def method_page(module_name, method_name):
         if method_name == "listar-clientes":
             method_parameters = [
                 {"name": "pagina", "default": 1, "type": "number"},
-                {"name": "registros_por_pagina", "default": 50, "type": "number"},
+                {"name": "registros_por_pagina", "default": 5, "type": "number"},
                 {"name": "apenas_importado_api", "default": "N", "type": "text"},
             ]
         elif method_name == "consultar-cliente":
