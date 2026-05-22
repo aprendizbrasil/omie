@@ -1,0 +1,14 @@
+{
+    "APPKEY": "6127561872432",
+    "APPSECRET": "53a3c57592e49a5f61d0ee2f11d49468",
+    "BASEURL": "https://app.omie.com.br/api/v1/",
+    "api-mot": {
+        "base_url": "https://apicorp.algartelecom.com.br/telecom/product-Inventory-management/management/v1/",
+        "client_Id": "2768affa-f5f2-4d66-9d27-69a41e62e385",
+        "client_secret": "216e52a2-6836-431e-bfd7-64e91e0541b7",
+        "username": "api_volp_ia",
+        "password": "Dwith@2019",
+        "realm": "0d5a3954",
+        "grant_type": "client_credentials"
+    }
+}

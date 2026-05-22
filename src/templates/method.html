@@ -4,7 +4,7 @@
 
 {% block content %}
     <h1>Método: {{ method_display_name }}</h1>
-    <h3>Endpoint: /api/v1/geral/clientes/</h3> {# Placeholder for now #}
+    <h3>Endpoint: {{ method_endpoint }}</h3>
 
     <form action="#" method="POST">
         <h2>Parâmetros</h2>
@@ -29,13 +29,17 @@
                 {% endfor %}
             </tbody>
         </table>
+        {# Hidden fields for MoT API token and client_id, populated by JavaScript #}
+        <input type="hidden" name="access_token" id="access_token_field" value="">
+        <input type="hidden" name="client_id" id="client_id_field" value="{{ mot_client_id }}"> {# client_id from Flask backend #}
+
         <button type="submit">Enviar</button>
     </form>
 
     <hr class="separator">
 
     <h2>Resposta JSON</h2>
-    <textarea class="json-response" rows="10">{{ json_response_data }}</textarea>
+    <textarea class="json-response" id="json-response" rows="10">{{ json_response_data }}</textarea>
 
     <h2>Comando cURL</h2>
     <textarea class="curl-command" rows="5">{{ curl_command_data }}</textarea>

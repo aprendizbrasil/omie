@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMIE API - {{ self.title() }}</title>
     <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
+    <link rel="icon" href="https://volpatoconnect.com/wp-content/uploads/2025/09/cropped-volpato-favicon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="https://volpatoconnect.com/wp-content/uploads/2025/09/cropped-volpato-favicon-180x180.png" />
 </head>
 <body>
     <header>
         <div class="logos-container">
-            <img src="{{ url_for("static", filename="img/dwith01.webp") }}" alt="Logo Dwith">
-            <img src="{{ url_for("static", filename="img/Zapio_01.png") }}" alt="Logo Zapio">
-            <img src="{{ url_for("static", filename="img/logo-omie.png") }}" alt="Logo Omie">
+            <a href="https://www.dwith.com.br/" target="_blank">
+                <img src="{{ url_for("static", filename="img/dwith01.webp") }}" alt="Logo Dwith">
+            </a>
+            <a href="https://model.newmo.com.br/docs/" target="_blank">
+                <img src="{{ url_for("static", filename="img/Newmo_01.png") }}" alt="Logo Newmo">
+            </a>
+            <a href="https://developer.omie.com.br/service-list/" target="_blank">
+                <img src="{{ url_for("static", filename="img/logo-omie.png") }}" alt="Logo Omie">
+            </a>
+            <a href="https://doc.allcomtelecom.com/api-reference/endpoint/allmanager/autentificacao/auth" target="_blank">
+                <img src="{{ url_for("static", filename="img/all-com.png") }}" alt="Logo All.com">
+            </a>
         </div>
         <nav class="main-menu">
             <ul>
